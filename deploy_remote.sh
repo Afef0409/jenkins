@@ -4,4 +4,5 @@ java -version
 if [[$? !=0 ]] then sudo amazon-linux-extras
 install -y java-openjdk11 fi
 scp -i "kp-afef-2.pem" kp-afef-2.pem  helloWorld.class ec2-user@ec2-13-56-228-246.us-west-1.compute.amazonaws.com:app
-ssh ec2-user@ec2-13-56-228-246.us-west-1.compute.amazonaws.com -c 'cd app && java helloWorld'
+ssh ec2-user@ec2-13-56-228-246.us-west-1.compute.amazonaws.com -c 
+cd app && java helloWorld
