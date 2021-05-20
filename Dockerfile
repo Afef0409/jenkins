@@ -1,3 +1,4 @@
 FROM openjdk:latest
-COPY . helloWorld.class
-CMD ["java", "Main"]
+RUN  /app
+COPY  helloWorld.class /app
+CMD java helloWorld
